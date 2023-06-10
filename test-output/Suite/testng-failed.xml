@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="methods" name="Test(failed)">
+    <classes>
+      <class name="testcases.UserSinup_Login">
+        <methods>
+          <include name="cleanUpActivities"/>
+          <include name="UserDetails"/>
+          <include name="validate_HomePage"/>
+        </methods>
+      </class> <!-- testcases.UserSinup_Login -->
+      <class name="testcases.UserChekout_SingleItem">
+        <methods>
+          <include name="cleanUpActivities"/>
+          <include name="validate_HomePage"/>
+          <include name="chkoutSingleitem"/>
+        </methods>
+      </class> <!-- testcases.UserChekout_SingleItem -->
+      <class name="testcases.SupplierSignup_Login">
+        <methods>
+          <include name="cleanUpActivities"/>
+          <include name="SignupSupplr"/>
+          <include name="validate_HomePage"/>
+        </methods>
+      </class> <!-- testcases.SupplierSignup_Login -->
+      <class name="testcases.UserCheckout_MultipleItems">
+        <methods>
+          <include name="MultiItemchkout"/>
+          <include name="cleanUpActivities"/>
+          <include name="validate_HomePage"/>
+        </methods>
+      </class> <!-- testcases.UserCheckout_MultipleItems -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
